@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery second assignment</title>
+			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
+			<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<style>
+				
+			</style>
+	</head>
+	<body>
+
+		 <section id="accord-sec">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-sm-6 col-xsm-6">
+		 				<span class="datepick">Pick the Date:<input type="text" name="calender" id="pickAdate"></span>
+		 			</div>
+
+		 			<div class="col-sm-6 col-xsm-6" id="accordion">
+		 				<h3 class="accordion-head">It's a sample description.</h3>
+		 				<div class="description">
+		 					<p>The founders had initially limited the website's membership to Harvard students; however, later they expanded it to higher education institutions in the Boston area, the Ivy League schools, and Stanford University. Facebook gradually added support for students at various other universities, and eventually to high school students as well.</p>
+		 				</div>
+		 				<h3 class="accordion-head">It's a sample description.</h3>
+		 				<div class="description">
+		 					<p>The founders had initially limited the website's membership to Harvard students; however, later they expanded it to higher education institutions in the Boston area, the Ivy League schools, and Stanford University. Facebook gradually added support for students at various other universities, and eventually to high school students as well.</p>
+		 				</div>
+		 				<h3 class="accordion-head">It's a sample description.</h3>
+		 				<div class="description">
+		 					<p>The founders had initially limited the website's membership to Harvard students; however, later they expanded it to higher education institutions in the Boston area, the Ivy League schools, and Stanford University. Facebook gradually added support for students at various other universities, and eventually to high school students as well.</p>
+		 				</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section>
+
+
+		 <section id="second-section">
+		 	<div class="container">
+		 				
+		 		<div class="row">
+		 			<div class="col-sm-4">
+		 				<p><b>Full Name :</b><span class="HM">  HM Alva</span> </p>
+		 				<p><b>Email :</b><span class="alva">  alva59@gmail.com</span></p>
+		 				<p><b>Description :</b><span class="des">The founders had initially limited the website's membership to Harvard students; however, later they expanded it to higher education institutions in the Boston area, the Ivy League schools, and Stanford University. Facebook gradually added support for students at various other universities, and eventually to high school students as well.</span></p>
+		 			</div>
+		 			<div class="col-sm-2">
+		 				<button class="btn btn-success" id="pasteName"> Name</button>
+		 				<button class="btn btn-success" id="pasteMail"> Email</button>
+		 				<button class="btn btn-success" id="pasteText"> Text</button>
+		 			</div>
+		 			<div class="col-sm-6">
+		 				<input type="text" name="box-1" id="copyName">
+		 				<input type="text" name="box-1" id="copyMail">
+		 				<textarea rows="7" cols="50" id="copyText"></textarea><br>
+		 				<button class="btn btn-success" id="refresh">Refresh</button>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section>
+
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+		<script>
+			
+			$(function(){
+			    
+			    $("#pickAdate").datepicker();
+
+			  });
+
+	//  ACCORDION		 
+
+			$(function(){
+
+				$("#accordion").accordion();
+			})
+
+
+	// PASTE	
+
+		$(function(){
+
+			$("#pasteName").click(function(){
+
+				 	var copy=$(".HM").text();
+
+				 	$("#copyName").val(copy).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+
+		$(function(){
+
+			$("#pasteMail").click(function(){
+
+				 	var cpy=$(".alva").text();
+
+				 	$("#copyMail").val(cpy).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+
+		$(function(){
+
+			$("#pasteText").click(function(){
+
+				 	var are=$(".des").text();
+
+				 	$("#copyText").val(are).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+		$(function(){
+		 $("#refresh").click(function(){
+	
+		 	var clear=$("").text();
+	
+		 	$("#copyName").val(clear).css({"color":"#006699","background":"#eee"})
+			
+			var clear=$("").text();
+	
+		 	$("#copyMail").val(clear).css({"color":"#006699","background":"#eee"})
+			
+			var clear=$("").text();
+	
+		 	$("#copyText").val(clear).css({"color":"#006699","background":"#eee"})
+		 		
+		 })
+	})
+		</script>
+	</body>
+</html>

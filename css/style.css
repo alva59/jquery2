@@ -1,0 +1,79 @@
+
+body{
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+}
+
+
+#accord-sec{
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+.datepick{
+    margin-top: 20px;
+    padding: 18px;
+    width: 50%;
+    background: #4A99A5;
+    margin-left: 20px;
+    font-size: 15px;
+    color:#fff;
+}
+
+#pickAdate{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 7px;
+    width: 43%;
+    color: #1b578a;
+    font-weight: 700;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: 1.5em 1.5em 1.5em 1.7em;
+    font-size: 100%;
+    background: #4A99A5;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.HM, .alva, .des, b{
+    color: #10d810;
+    font-size: 16px;
+}
+
+#pasteName,#pasteMail,#pasteText{
+    padding: 10px 19px;
+    margin-bottom: 15px;
+    border-radius: inherit;
+    color: #449D44;
+    background: #fff;
+    width: 60%;
+    font-weight: 700;
+}
+
+#pasteName:hover,#pasteMail:hover,#pasteText:hover{
+    color: #fff;
+    background: #449D44;
+    border-color: #398439;
+}
+
+#copyName, #copyMail, #copyText{
+    width: 67%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    width: 100px;
+    padding: 10px;
+    border-radius: inherit;
+    margin-top: 10px;
+}
